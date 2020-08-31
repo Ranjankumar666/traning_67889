@@ -1,0 +1,27 @@
+.footer{
+  background-color: #000c00;
+  grid-row: 3/-1;
+  width: 100;
+  color: #eee;
+  display: grid;
+  grid-template-rows: repeat(2,max-content);
+  grid-auto-flow: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 4rem;
+
+  &__links{
+    margin-top: 4rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 4rem;
+    a{
+      transition: all .3s ease;
+    }
+  
+    a:hover{
+      transform: scale(1.2) translateY(-2px);
+    }
+  }
+}
